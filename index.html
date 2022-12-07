@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,32 @@
     <link rel="stylesheet" href="style.css">
     <title>Game Randomizer</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="navbar">
+            <div class="title">
+                <h1>Game Randomizer</h1>
+                <button>Show Games</button>
+            </div>
+            <div class="game-list" style="display: flex;">
+                <div class="game-list-card">
+                    <img src="img/cuphead-icon.png">
+                    <p>Cuphead</p>
+                </div>
+                <div class="game-list-card">
+                    <img src="img/lol-icon.png">
+                    <p>League of Legends</p>
+                </div>
+            </div>
+        </div>
+        <div id="randomizerContent" class="randomizer-container">
+        </div>
+    </div>
+
+    <script async defer src="model.js"></script>
+    <script async defer src="view.js"></script>
+    <script defer src="controller.js"></script>
 </body>
+
 </html>

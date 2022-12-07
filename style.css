@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+body {
+    background-color: rgb(19, 19, 19);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-weight: 900;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar h1 {
+    line-height: 1em;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+.title button {
+    padding: 5px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.game-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-list-card {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(65, 65, 65);
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.game-list-card p {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.game-list-card img {
+    width: 40px;
+    height: auto;
+}
+
+.game-list-card:hover {
+    background-color: white;
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+}
+
+.randomizer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.randomizer-inner {
+    background-color: rgb(62, 62, 62);
+    margin: 20px;
+}
+
+.randomizer-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(39, 39, 39);
+}
+
+.randomizer-title img {
+    width: 60px;
+    height: auto;
+}
+
+.randomizer-title p {
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.randomizer-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.randomizer-content-card-list {
+    display: flex;
+}
+.randomizer-content-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-top: 0;
+    flex-wrap: wrap;
+}
+.randomizer-content-cards img {
+    width: 75px;
+    height: auto;
+    display: block;
+}
+.randomizer-content-cards p {
+    color: white;
+    font-weight: 900;
+}
+.randomizer-buttons {
+    display: flex;
+    justify-content: center;
+}
+.randomizer-buttons button {
+    padding: 5px;
+}
