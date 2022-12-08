@@ -1,6 +1,8 @@
 const model = {
     games: {
         cuphead: {
+            name: "Cuphead",
+            img_path: "img/cuphead-icon.png",
             guns: [
                 {name: "Charge", img_path: "img/Cuphead/Guns/ChargeIcon.png"},
                 {name: "Chaser", img_path: "img/Cuphead/Guns/ChaserIcon.png"},
@@ -29,6 +31,12 @@ const model = {
                 {name: "3", img_path: "img/Cuphead/Super Arts/3.png"},
             ],
         },
+        lol: {
+            name: "League of Legends",
+            img_path: "img/lol-icon.png",
+        },
     },
     view: document.getElementById("randomizerContent"),
+    menu: document.getElementById("menu-dropdown"),
+    menulist: document.getElementById("menuGameList"),
 };

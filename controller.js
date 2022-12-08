@@ -2,7 +2,7 @@ function randomNumber(val) {
     return Math.floor(Math.random() * val)
 }
 
-function randomCuphead(type) {
+function randomCupheadItem(type) {
     if(type == "guns" || type == "charms" || type == "super_arts") {
         let randomIndex = randomNumber(model.games.cuphead[type].length);
 

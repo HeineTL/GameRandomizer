@@ -13,27 +13,18 @@
     <div class="container">
         <div class="navbar">
             <div class="title">
-                <h1>Game Randomizer</h1>
-                <button>Show Games</button>
+                <h1 class="gamerandomizertitle" onclick="menuDropdown()">Game Randomizer</h1>
+                <button id="menu-dropdown" onclick="menuDropdown()">Show Games</button>
             </div>
-            <div class="game-list" style="display: flex;">
-                <div class="game-list-card">
-                    <img src="img/cuphead-icon.png">
-                    <p>Cuphead</p>
-                </div>
-                <div class="game-list-card">
-                    <img src="img/lol-icon.png">
-                    <p>League of Legends</p>
-                </div>
-            </div>
+            <div class="game-list" id="menuGameList"></div>
         </div>
         <div id="randomizerContent" class="randomizer-container">
         </div>
     </div>
 
-    <script async defer src="model.js"></script>
-    <script async defer src="view.js"></script>
-    <script defer src="controller.js"></script>
+    <script src="model.js"></script>
+    <script defer src="view.js"></script>
+    <script src="controller.js"></script>
 </body>
 
 </html>
