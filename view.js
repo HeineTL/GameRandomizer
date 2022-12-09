@@ -1,3 +1,4 @@
+menuDropdown();
 cupheadView();
 function cupheadView() {
     let randomShot1 = randomCupheadItem("guns");
@@ -33,7 +34,29 @@ function cupheadView() {
                     </div>
             </div>
             <div class="randomizer-buttons">
-                <button onclick="cupheadView()">Randomize</button>
+                <button class="randomizeButton" onclick="${model.games.cuphead.view_function}">Randomize</button>
+            </div>
+        </div>
+    `;
+    model.view.innerHTML = tempView;
+}
+function LoLView() {
+    let randomChamp = randomLoLChamp();
+
+    let tempView = /*HTML*/`
+        <div class="randomizer-inner">
+            <div class="randomizer-title">
+                <img src="${model.games.lol.img_path}">
+                <p>${model.games.lol.name}</p>
+            </div>
+            <div class="randomizer-content">
+                    <div class="randomizer-content-cards">
+                        <img src="${randomChamp.squarePortraitPath}">
+                        <p>${randomChamp.name}</p>
+                    </div>
+            </div>
+            <div class="randomizer-buttons">
+                <button class="randomizeButton" onclick="${model.games.lol.view_function}">Randomize</button>
             </div>
         </div>
     `;
@@ -47,10 +70,11 @@ function menuDropdown() {
         model.menu.innerHTML = "Hide Games";
         let tempIndex = Object.keys(model.games);
         for (let i = 0; i < Object.keys(model.games).length; i++) {
-            let name = model.games[tempIndex[i]].name
-            let imgpath = model.games[tempIndex[i]].img_path
+            let name = model.games[tempIndex[i]].name;
+            let imgpath = model.games[tempIndex[i]].img_path;
+            let viewFunction = model.games[tempIndex[i]].view_function;
             model.menulist.innerHTML += `
-                <div class="game-list-card">
+                <div onclick="${viewFunction}" class="game-list-card">
                     <img src="${imgpath}">
                     <p>${name}</p>
                 </div>`;

@@ -3,6 +3,7 @@ const model = {
         cuphead: {
             name: "Cuphead",
             img_path: "img/cuphead-icon.png",
+            view_function: "cupheadView()",
             guns: [
                 {name: "Charge", img_path: "img/Cuphead/Guns/ChargeIcon.png"},
                 {name: "Chaser", img_path: "img/Cuphead/Guns/ChaserIcon.png"},
@@ -34,6 +35,8 @@ const model = {
         lol: {
             name: "League of Legends",
             img_path: "img/lol-icon.png",
+            view_function: "LoLView()",
+            champs: AllLeagueChamps,
         },
     },
     view: document.getElementById("randomizerContent"),

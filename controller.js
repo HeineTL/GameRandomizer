@@ -9,3 +9,9 @@ function randomCupheadItem(type) {
         return model.games.cuphead[type][randomIndex];
     }
 }
+
+function randomLoLChamp() {
+    let randomIndex = randomNumber(model.games.lol.champs.length);
+
+    return model.games.lol.champs[randomIndex];
+}
