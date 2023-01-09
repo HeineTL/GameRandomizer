@@ -12,24 +12,24 @@ function cupheadView() {
     let tempView = /*HTML*/`
         <div class="randomizer-inner">
             <div class="randomizer-title">
-                <img src="img/cuphead-icon.png">
+                <div class="randomizer-title-image" style="background-image: url('img/cuphead-icon.png');"></div>
                 <p>Cuphead</p>
             </div>
             <div class="randomizer-content">
                     <div class="randomizer-content-cards">
-                        <img src="${randomShot1.img_path}">
+                        <div class="randomizer-content-cards-image" style="background-image:url('${randomShot1.img_path}')"></div>
                         <p>SHOT-1</p>
                     </div>
                     <div class="randomizer-content-cards">
-                        <img src="${randomShot2.img_path}">
+                        <div class="randomizer-content-cards-image" style="background-image:url('${randomShot2.img_path}')"></div>
                         <p>SHOT-2</p>
                     </div>
                     <div class="randomizer-content-cards">
-                        <img src="${randomSuper.img_path}">
+                        <div class="randomizer-content-cards-image" style="background-image:url('${randomSuper.img_path}')"></div>
                         <p>SUPER</p>
                     </div>
                     <div class="randomizer-content-cards">
-                        <img src="${randomCharm.img_path}">
+                    <div class="randomizer-content-cards-image" style="background-image:url('${randomCharm.img_path}')"></div>
                         <p>CHARM</p>
                     </div>
             </div>
@@ -46,12 +46,12 @@ function LoLView() {
     let tempView = /*HTML*/`
         <div class="randomizer-inner">
             <div class="randomizer-title">
-                <img src="${model.games.lol.img_path}">
+                <div class="randomizer-title-image" style="background-image: url('img/lol-icon.png');"></div>
                 <p>${model.games.lol.name}</p>
             </div>
             <div class="randomizer-content">
                     <div class="randomizer-content-cards">
-                        <img src="${randomChamp.squarePortraitPath}">
+                        <div class="randomizer-content-cards-image" style="background-image:url('${randomChamp.squarePortraitPath}')"></div>
                         <p>${randomChamp.name}</p>
                     </div>
             </div>
@@ -75,7 +75,7 @@ function menuDropdown() {
             let viewFunction = model.games[tempIndex[i]].view_function;
             model.menulist.innerHTML += `
                 <div onclick="${viewFunction}" class="game-list-card">
-                    <img src="${imgpath}">
+                    <div class="game-list-card-image" style="background-image: url('${imgpath}')"></div>
                     <p>${name}</p>
                 </div>`;
         }
