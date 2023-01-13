@@ -15,3 +15,8 @@ function randomLoLChamp() {
 
     return model.games.lol.champs[randomIndex];
 }
+function randomLoLSummonerSpell() {
+    let randomIndex = randomNumber(model.games.lol.champs.length);
+
+    return model.games.lol.champs[randomIndex];
+}

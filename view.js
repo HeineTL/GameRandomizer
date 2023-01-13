@@ -54,6 +54,10 @@ function LoLView() {
                         <div class="randomizer-content-cards-image" style="background-image:url('${randomChamp.squarePortraitPath}')"></div>
                         <p>${randomChamp.name}</p>
                     </div>
+                    <div class="randomizer-content-cards">
+                        <div class="randomizer-content-cards-image" style="background-image:url('${randomChamp.squarePortraitPath}')"></div>
+                        <p>SS 1</p>
+                    </div>
             </div>
             <div class="randomizer-buttons">
                 <button class="randomizeButton" onclick="${model.games.lol.view_function}">Randomize</button>

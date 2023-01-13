@@ -37,6 +37,9 @@ const model = {
             img_path: "img/lol-icon.png",
             view_function: "LoLView()",
             champs: AllLeagueChamps,
+            summonerSpells: [
+                {name: "Flash", img_path: 'img'}
+            ],
         },
     },
     view: document.getElementById("randomizerContent"),
