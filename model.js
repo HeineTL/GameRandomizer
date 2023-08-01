@@ -37,9 +37,26 @@ const model = {
             img_path: "img/lol-icon.png",
             view_function: "LoLView()",
             champs: AllLeagueChamps,
+            items: AllLeagueItems,
             summonerSpells: [
-                {name: "Flash", img_path: 'img'}
+                {name: "Barrier", img_path: 'img/LoL/Summoner_Spells/Barrier.png'},
+                {name: "Cleanse", img_path: 'img/LoL/Summoner_Spells/Cleanse.png'},
+                {name: "Exhaust", img_path: 'img/LoL/Summoner_Spells/Exhaust.png'},
+                {name: "Flash", img_path: 'img/LoL/Summoner_Spells/Flash.png'},
+                {name: "Ghost", img_path: 'img/LoL/Summoner_Spells/Ghost.webp'},
+                {name: "Heal", img_path: 'img/LoL/Summoner_Spells/Heal.png'},
+                {name: "Ignite", img_path: 'img/LoL/Summoner_Spells/Ignite.png'},
+                {name: "Smite", img_path: 'img/LoL/Summoner_Spells/Smite.png'},
+                {name: "Teleport", img_path: 'img/LoL/Summoner_Spells/Teleport.png'},
             ],
+            roles: [
+                {name: "Top", img_path: "img/LoL/Roles/Top.png"},
+                {name: "Jungle", img_path: "img/LoL/Roles/Jungle.png"},
+                {name: "Mid", img_path: "img/LoL/Roles/Mid.png"},
+                {name: "ADC", img_path: "img/LoL/Roles/Bot.png"},
+                {name: "Support", img_path: "img/LoL/Roles/Support.png"},
+            ],
+            itemsPicked: []
         },
     },
     view: document.getElementById("randomizerContent"),

@@ -42,6 +42,12 @@ function cupheadView() {
 }
 function LoLView() {
     let randomChamp = randomLoLChamp();
+    let randomSS = randomLoLSummonerSpell();
+    let randomSS2 = randomLoLSummonerSpell();
+    let randomRole = randomLoLRole();
+    while (randomSS2 === randomSS) {
+        randomSS2 = randomLoLSummonerSpell();
+    }
 
     let tempView = /*HTML*/`
         <div class="randomizer-inner">
@@ -55,9 +61,39 @@ function LoLView() {
                         <p>${randomChamp.name}</p>
                     </div>
                     <div class="randomizer-content-cards">
-                        <div class="randomizer-content-cards-image" style="background-image:url('${randomChamp.squarePortraitPath}')"></div>
-                        <p>SS 1</p>
+                        <div class="randomizer-content-cards-image" style="background-image:url('${randomRole.img_path}')"></div>
+                        <p>${randomRole.name}</p>
                     </div>
+                    <div class="randomizer-content-cards toLeft">
+                        <div class="randomizer-content-cards-center">
+                            <div class="randomizer-content-cards-image summonerSpell" style="background-image:url('${randomSS.img_path}')"></div>
+                            <p class="summonerSpellText">${randomSS.name}</p>
+                        </div>
+                        <div class="randomizer-content-cards-center">
+                            <div class="randomizer-content-cards-image summonerSpell" style="background-image:url('${randomSS2.img_path}')"></div>
+                            <p class="summonerSpellText">${randomSS2.name}</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="randomizer-content">
+                <div class="randomizer-content-cards">
+                    <div class="randomizer-content-cards-image smaller" style="background-image:url('https://ddragon.leagueoflegends.com/cdn/13.1.1/img/item/${checkLoLItem().image.full}')"></div>
+                </div>
+                <div class="randomizer-content-cards">
+                    <div class="randomizer-content-cards-image smaller" style="background-image:url('https://ddragon.leagueoflegends.com/cdn/13.1.1/img/item/${checkLoLItem().image.full}')"></div>
+                </div>
+                <div class="randomizer-content-cards">
+                    <div class="randomizer-content-cards-image smaller" style="background-image:url('https://ddragon.leagueoflegends.com/cdn/13.1.1/img/item/${checkLoLItem().image.full}')"></div>
+                </div>
+                <div class="randomizer-content-cards">
+                    <div class="randomizer-content-cards-image smaller" style="background-image:url('https://ddragon.leagueoflegends.com/cdn/13.1.1/img/item/${checkLoLItem().image.full}')"></div>
+                </div>
+                <div class="randomizer-content-cards">
+                    <div class="randomizer-content-cards-image smaller" style="background-image:url('https://ddragon.leagueoflegends.com/cdn/13.1.1/img/item/${checkLoLItem().image.full}')"></div>
+                </div>
+                <div class="randomizer-content-cards">
+                    <div class="randomizer-content-cards-image smaller" style="background-image:url('https://ddragon.leagueoflegends.com/cdn/13.1.1/img/item/${checkLoLItem().image.full}')"></div>
+                </div>
             </div>
             <div class="randomizer-buttons">
                 <button class="randomizeButton" onclick="${model.games.lol.view_function}">Randomize</button>

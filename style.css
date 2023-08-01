@@ -155,13 +155,35 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    padding-top: 0;
+    padding-right: 5px;
+}
+.toLeft {
+    align-items: flex-start;
+    padding: 0;
 }
 .randomizer-content-cards-image {
     height: 75px;
     width: 75px;
     background-size: contain;
+}
+.smaller {
+    width: 50px;
+    height: 50px;
+}
+.randomizer-content-cards-center {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 5px;
+}
+.summonerSpell {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    margin-right: 5px;
+}
+.summonerSpellText {
+    font-size: 1em;
 }
 .randomizer-content-cards img {
     width: 75px;
